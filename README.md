@@ -12,7 +12,7 @@ npm installs required
 
 dev dependency
 
-* $ npm i node -D
+* $ npm i nodemon -D
 
 <br>
 Used to make post request for payments based on the sandbox app created on developers portal
