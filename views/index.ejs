@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+
+    <script src="https://kit.fontawesome.com/912e452282.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    </head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+body{
+   font-size: 18px;
+   font-family: 'Montserrat', sans-serif;
+}
+
+
+.header{
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+.header>h1{
+    margin: 20px;
+}
+
+.MpesaContainer{
+    width: 60%;
+    margin-top: 50px;
+    transform: translateX(35%);
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 2px 4px 8px 2px #ccc;
+    animation: animContainer;
+    animation-duration: 1s;
+    animation-delay: 2ms;
+    animation-timing-function: linear;
+    transition: ease-in-out 0.6s;
+}
+@keyframes animContainer{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    25%{
+        transform: translateX(-50%);
+        opacity: 0.1;
+    }
+    50%{
+        transform: translateX(10%);
+        opacity: 0.4;
+    }
+    75%{
+        transform: translateX(30%);
+        opacity: 0.6;
+    }
+    100%{
+        transform: translateX(35%);
+        opacity: 1;
+    }
+}
+.MpesaContainer>h2,p,button{
+    margin: 30px;
+}
+.MpesaContainer>button{
+    padding: 10px 30px;
+    width: 50%;
+    border: none;
+    color: #fff;
+    border-radius: 22px;
+    background-color: rgb(0, 128, 75);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+.MpesaContainer>button:hover{
+    background: rgb(50, 190, 104);
+}
+.MpesaContainer>button>a{
+    text-decoration: none;
+    color: #fff;
+}
+.MpesaContainer>h3{
+    color: rgb(73, 72, 72);
+}
+.container-heading{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.container-heading>h2{
+    margin: 10px;
+}
+</style>
+
+<body>
+    <div class="header">
+        <h1><i class="fa-solid fa-money-check"></i> Payment Method</h1>
+    </div>
+
+    <div class="MpesaContainer">
+        <div class="container-heading">
+        <h2>Mpesa Payment</h2>
+        </div>
+
+        <p>Click on this button to pay for goods using mpesa</p>
+        <h3>Ksh. 250</h3>
+        <button><a href="#"><i class="fa-solid fa-money-bill-transfer"></i> Pay</a></button>
+    </div>
+</body>
+</html>

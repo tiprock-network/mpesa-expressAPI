@@ -1,0 +1,20 @@
+{
+  "name": "mpesa_api",
+  "version": "1.0.0",
+  "description": "Mpesa Payment test Page",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Lincoln Theophilus Owiti",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5",
+    "unirest": "^0.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
